@@ -1,11 +1,14 @@
-import {defineConfig} from 'sanity'
-import {structureTool} from 'sanity/structure'
-import {visionTool} from '@sanity/vision'
-import {schemaTypes} from './schemaTypes'
+import { defineConfig } from 'sanity'
+import { structureTool } from 'sanity/structure'
+import { visionTool } from '@sanity/vision'
+import { pageAccueil } from './schemaTypes/pageAccueil'
+import { prestation } from './schemaTypes/prestation'
+import { aPropos } from './schemaTypes/aPropos'
 
 export default defineConfig({
   name: 'default',
   title: 'margaux-jacquet',
+  apiVersion: '2023-05-20',
 
   projectId: 'ujmup2s8',
   dataset: 'production',
@@ -13,6 +16,6 @@ export default defineConfig({
   plugins: [structureTool(), visionTool()],
 
   schema: {
-    types: schemaTypes,
+    types: [pageAccueil, prestation, aPropos],
   },
 })
