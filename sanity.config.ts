@@ -4,6 +4,7 @@ import { visionTool } from '@sanity/vision'
 import { pageAccueil } from './schemaTypes/pageAccueil'
 import { prestation } from './schemaTypes/prestation'
 import { aPropos } from './schemaTypes/aPropos'
+import { avisClient } from './schemaTypes/avisClient'
 
 export default defineConfig({
   name: 'default',
@@ -16,6 +17,6 @@ export default defineConfig({
   plugins: [structureTool(), visionTool()],
 
   schema: {
-    types: [pageAccueil, prestation, aPropos],
+    types: [pageAccueil, prestation, aPropos, avisClient],
   },
 })

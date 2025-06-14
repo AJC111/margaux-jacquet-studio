@@ -19,7 +19,8 @@ export const aPropos = defineType({
     defineField({
       name: 'intro',
       title: 'Texte d’introduction',
-      type: 'text',
+      type: 'array',
+      of: [{ type: 'block' }],
     }),
     defineField({
       name: 'parcours',
