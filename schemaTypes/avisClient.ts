@@ -32,8 +32,8 @@ export const avisClient = defineType({
       title: 'Commentaire',
       type: 'text',
       rows: 4,
-      validation: (Rule) => Rule.required().min(20).max(500),
-      description: 'Témoignage du client (20-500 caractères)',
+      validation: (Rule) => Rule.required().min(20).max(1000),
+      description: 'Témoignage du client (20-1000 caractères)',
     }),
     defineField({
       name: 'note',

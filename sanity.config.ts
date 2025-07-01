@@ -5,6 +5,7 @@ import { pageAccueil } from './schemaTypes/pageAccueil'
 import { prestation } from './schemaTypes/prestation'
 import { aPropos } from './schemaTypes/aPropos'
 import { avisClient } from './schemaTypes/avisClient'
+import { carouselImage } from './schemaTypes/carousel'
 
 export default defineConfig({
   name: 'default',
@@ -17,6 +18,6 @@ export default defineConfig({
   plugins: [structureTool(), visionTool()],
 
   schema: {
-    types: [pageAccueil, prestation, aPropos, avisClient],
+    types: [pageAccueil, prestation, aPropos, avisClient, carouselImage],
   },
 })
