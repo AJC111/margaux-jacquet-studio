@@ -1,0 +1,31 @@
+/* CalendrierReservation overrides */
+.react-calendar {
+  width: 100%;
+  max-width: 100%;
+  background: #fdfbf7;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 0 0 1px #eee;
+  font-family: inherit;
+}
+
+.react-calendar__tile {
+  padding: 0.5rem 0;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+}
+
+.react-calendar__tile:hover {
+  background: #eee;
+}
+
+.available-day {
+  background: #f4c95d !important;
+  color: black !important;
+  font-weight: 600;
+}
+
+.selected-day {
+  background: #000 !important;
+  color: white !important;
+}
